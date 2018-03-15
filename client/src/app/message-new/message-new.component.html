@@ -1,0 +1,8 @@
+<p>
+  message-new works!
+</p>
+
+<form #newcomment="ngForm" (ngSubmit)="onClickSubmit(newcomment.value)" >
+  <input type="text" name="text" placeholder = "text" ngModel>
+  <input type="submit" value="submit">
+</form>

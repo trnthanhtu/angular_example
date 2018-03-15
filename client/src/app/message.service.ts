@@ -13,4 +13,7 @@ export class MessageService {
       .map(response => response.json());
   }
 
+  addMessage(data) {
+    return this.http.post('http://localhost:3000/messages', data);
+  }
 }
